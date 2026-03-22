@@ -14,6 +14,8 @@ LABEL author="Daniel Barton" maintainer="danielb@purpleflaghosting.com"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+ENV YOLK_EOL_NAG_WARNING=1
+
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
   gettext-base \
   libnss-wrapper \
