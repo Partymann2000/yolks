@@ -279,6 +279,9 @@ export GROUP_ID=$(id -g)
 envsubst < /passwd.template > ${NSS_WRAPPER_PASSWD}
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libnss_wrapper.so
 
+# Unset Steam credentials so they are not leaked to the server process
+unset STEAM_USER STEAM_PASS
+
 # Replace Startup Variables
 modifiedStartup=`eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')`
 
