@@ -19,11 +19,14 @@ jobs:
           - alpine
           - debian_bookworm
           - debian_trixie
-          - ubuntu
+          - ubuntu_24.04
         include:
           - oses: debian_bookworm
             alias_tags: |
               ghcr.io/ptero-eggs/yolks:debian
+          - oses: ubuntu_24.04
+            alias_tags: |
+              ghcr.io/ptero-eggs/yolks:ubuntu
     steps:
       - uses: actions/checkout@v4
       - uses: docker/setup-qemu-action@v3

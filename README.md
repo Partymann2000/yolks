@@ -35,8 +35,10 @@ is tagged correctly.
   * `ghcr.io/ptero-eggs/yolks:debian`
 * [debian_trixie](/oses/debian_trixie)
   * `ghcr.io/ptero-eggs/yolks:debian_trixie`
-* [ubuntu](/oses/ubuntu)
+* [ubuntu](/oses/ubuntu_24.04)
   * `ghcr.io/ptero-eggs/yolks:ubuntu`
+  * `ghcr.io/ptero-eggs/yolks:ubuntu_24.04`
+
 
 ### [Apps](/apps)
 
