@@ -42,4 +42,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/ptero-eggs/yolks:python_${{ matrix.tag }}
+            ghcr.io/partymann2000/yolks:python_${{ matrix.tag }}
