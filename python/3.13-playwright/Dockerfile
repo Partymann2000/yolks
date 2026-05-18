@@ -7,7 +7,7 @@ RUN         apt update \
     && useradd -m -d /home/container container
 
 RUN pip install --upgrade pip setuptools wheel && \
-    pip install playwright==1.59.0 && \
+    pip install playwright && \
     playwright install --with-deps
 
 USER        container
