@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETPLATFORM node:20-bookworm-slim
+FROM        --platform=$TARGETPLATFORM node:24-bookworm-slim
 
 LABEL       author="Pterodactyl Image Maker" maintainer="partymann2000"
 
