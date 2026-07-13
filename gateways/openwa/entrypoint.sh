@@ -9,6 +9,11 @@ if [ ! -d ".git" ]; then
     npm install
 fi
 
+# FIX: Erstelle das data-Verzeichnis, falls OpenWA es beim First-Run sucht
+if [ ! -d "data" ]; then
+    mkdir -p data
+fi
+
 # Pterodactyl Startup-Variablen auflösen
 MODIFIED_STARTUP=$(echo -e -n ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')
 echo "--- Starte OpenWA WhatsApp API Gateway ---"
